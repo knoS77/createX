@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+.about {
+    width: 100%;
+    height: 630px;
+    position: relative;
+    background: url("../../public/Img/bck\ about.png") 70% / cover;
+}
+.about__container {
+    padding: 80px 0 0 50px;
+}
+.about__title{
+font-family: Ubuntu;
+font-size: 40px;
+font-weight: 700;
+text-transform: uppercase;
+
+}
+.about__text {
+    margin: 5px 0 0 0;
+    font-size: 18px;
+    max-width: 500px;
+    width: 100%;
+}
+
+
+/* Material */
+
+.material__container {
+    margin: 30px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.materials__block {
+width:240px;
+height: auto;
+padding: 10px 0;
+gap: 20px;
+opacity: 0px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.materials__block-title {
+color:  #FF5A30;
+font-family: Ubuntu;
+font-size: 30px;
+font-weight: 600;
+
+}
+.materials__block-subTitle {
+font-family: Ubuntu;
+font-size: 12px;
+font-weight: 400;
+line-height: 21px;
+color: #1E212C;
+}
+
+
+
+
+/* Author */
+.author {
+    margin: 100px 0 0 0;
+}
+.author__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.author__picture img{
+width: 400px;
+}
+
+.author__biography {
+    padding: 40px;
+    max-width: 500px;
+    height: auto;
+    border-radius: 4px;
+    border: 1px solid black;
+    box-shadow: 0px 4px 4px -4px #1E212C08;
+box-shadow: 0px 12px 10px -6px #9A9CA50A;
+box-shadow: 0px 30px 24px -10px #9A9CA50D;
+box-shadow: 0px 80px 80px -20px #9A9CA514;
+position: relative;
+}
+.author__biography-text {
+color: #1E212C;
+font-family: Ubuntu;
+font-size: 14px;
+font-weight: 700;
+line-height: 30px;
+
+}
+.author__biography-name {
+    margin: 50px 0 0 0;
+font-family: Ubuntu;
+font-size: 16px;
+font-weight: 700;
+}
+.author__biography-company {
+    display: flex;
+    margin: 4px 0 0 0;
+font-family: Ubuntu;
+font-size: 14px;
+font-weight: 400;
+color: #787A80;
+}
+
+
+@media (max-width: 400px){
+    .author__picture img{
+        width: 300px;
+        z-index: 0;
+        }
+    .author__biography {
+        z-index: 20;
+        margin: -10px 0 0 0;
+        padding: 40px;
+        max-width: 300px;
+        height: auto;
+        border-radius: 4px;
+        border: 1px solid black;
+        box-shadow: 0px 4px 4px -4px #1E212C08;
+    box-shadow: 0px 12px 10px -6px #9A9CA50A;
+    box-shadow: 0px 30px 24px -10px #9A9CA50D;
+    box-shadow: 0px 80px 80px -20px #9A9CA514;
+    position: relative;
+    background-color: #fff;
+    }
+}
+
+
+
+
+
+/* Benefits */
+.benefits__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 10px 0 0 0;
+    }
+    .benefits__block {
+        margin: 25px 0 0 0;
+        max-width: 300px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    
+    }
+    .benefits__block:nth-child(2)::before{
+        content: '';
+        position: absolute;
+        left: -0px;
+        top: 0;
+        background-color: #787A80;
+        height: 100%;
+        width: 1px;
+    }
+    .benefits__block:nth-child(3)::before{
+        content: '';
+        position: absolute;
+        left: -0px;
+        top: 0;
+        background-color: #787A80;
+        height: 100%;
+        width: 1px;
+    }
+    @media(max-width: 899px){
+        .benefits__block:nth-child(3)::before{
+            content: '';
+            display: none;
+        }
+    }
+    @media (max-width: 599px){
+        .benefits__block:nth-child(2)::before{
+            content: '';
+            display: none;
+        }
+    }
+    
+    .benefits__block-title {
+        font-family: Ubuntu;
+    font-weight: 700;
+    text-align: center;
+    color:#1E212C;
+    padding: 20px 0;
+    }
+    .benefits__block-subTitle{
+        text-align: center;
+        color: #787A80;
+        width: 250px;
+        font-size: 14px;
+    }
