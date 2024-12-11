@@ -78,7 +78,7 @@ const About:React.FC = () => {
                                 {arr.subTitle}
                             </div>
                     </div>
-                )}
+                )};
             </div>
         </section>
 
