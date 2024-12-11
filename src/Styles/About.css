@@ -35,7 +35,6 @@ text-transform: uppercase;
 }
 .materials__block {
 width:240px;
-height: auto;
 padding: 10px 0;
 gap: 20px;
 opacity: 0px;

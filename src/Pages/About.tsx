@@ -31,6 +31,7 @@ const MaterialsItem:MaterialsBlockItem[] = [
     {id: 4, img: blockFourMaterial, title: '150000+ m2', subTitle: 'Finishing work was carried out'},
 ];
 
+console.log(MaterialsItem);
 
 type BenefitsBlockItem = {
     id: number,
@@ -68,17 +69,17 @@ const About:React.FC = () => {
             Materials
             </div>
             <div className="material__container">
-                {MaterialsItem.map((arr):React.ReactElement => 
-                    <div key={arr.id} className="materials__block">
-                        <img src={arr.img} alt={arr.title} />
-                        <div className="materials__block-title">
-                            {arr.title}
-                        </div>
-                        <div className="materials__block-subTitle">
-                                {arr.subTitle}
-                            </div>
-                    </div>
-                )};
+            {MaterialsItem.map((arr): React.ReactElement => 
+           <div key={arr.id} className="materials__block">
+               <img src={arr.img} alt={arr.title} />
+               <div className="materials__block-title">
+                   {arr.title}
+               </div>
+               <div className="materials__block-subTitle">
+                   {arr.subTitle}
+               </div>
+           </div>
+       )}
             </div>
         </section>
 
