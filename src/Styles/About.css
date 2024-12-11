@@ -26,6 +26,8 @@ text-transform: uppercase;
 /* Material */
 
 .material__container {
+
+    color: #1E212C;
     margin: 30px 0 0 0;
     display: flex;
     justify-content: center;
@@ -34,6 +36,7 @@ text-transform: uppercase;
     gap: 30px;
 }
 .materials__block {
+    color: #1E212C;
 width:240px;
 padding: 10px 0;
 gap: 20px;
