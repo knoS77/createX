@@ -24,7 +24,7 @@ const [isOpen, setOpen] = useState<Boolean>(false);
 
   }} id="container" className="header__container">
     <div className="header__logo">
-      Create<span>X</span>
+    <NavLink to='*'> Create<span>X</span> </NavLink> 
     </div>
     <div className={`header__nav ${isOpen ? "active" : ""}`}>
       <ul className='nav__list'>

@@ -1,35 +1,53 @@
 import React from "react";
 import "../Styles/About.css"
+// Material
+import blockOneMaterial from "../Img/sc 1 aboutOne.svg"
+import blockTwoMaterial from "../Img/sc1 aboutTwo.svg"
+import blockThreeMaterial from "../Img/sc1 aboutThree.svg";
+import blockFourMaterial from "../Img/sc1 aboutFour.svg";
+
+// benefits
+import blockOneBenefits from "../Img/sc3 block1 about.svg";
+import blockTwoBenefits from "../Img/sc3 block2 about.svg";
+import blockThreeBenefits from "../Img/sc3 block3 about.svg";
+
+// Auhor
+import author from "../Img/picture author.jpg";
+import authorSignature from "../Img/picture author signature.svg";
+const imgAuthor:any = author;
+const imgAuthorSignature:any = authorSignature;
 
 type MaterialsBlockItem = {
     id: number,
-    img: string,
+    img: any,
     title: string,
     subTitle: string,
 };
 
 const MaterialsItem:MaterialsBlockItem[] = [
-    {id: 1, img: '../Img/sc 1 aboutOne.svg', title: '60%', subTitle: 'Clients on`the recommendation of`friends'},
-    {id: 2, img: '../Img/sc1 aboutTwo.svg', title: '2400+', subTitle: 'Apartments renovated'},
-    {id: 3, img: '../Img/sc1 aboutThree.svg', title: '670', subTitle: 'Qualified specialists'},
-    {id: 4, img: '../Img/sc1 aboutFour.svg', title: '150000+ m2', subTitle: 'Finishing work was carried out'},
+    {id: 1, img: blockOneMaterial, title: '60%', subTitle: 'Clients on`the recommendation of`friends'},
+    {id: 2, img: blockTwoMaterial, title: '2400+', subTitle: 'Apartments renovated'},
+    {id: 3, img: blockThreeMaterial, title: '670', subTitle: 'Qualified specialists'},
+    {id: 4, img: blockFourMaterial, title: '150000+ m2', subTitle: 'Finishing work was carried out'},
 ];
 
 
 type BenefitsBlockItem = {
     id: number,
-    img: string,
+    img: any,
     title: string,
     subTitle: string,
 };
 
-// import "../Img/sc3 block1 about.svg"
 
 const BenefitsBlock: BenefitsBlockItem[] = [
-    {id: 1, title: 'Training', img: '../Img/sc3 block1 about.svg', subTitle: 'Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.'},
-    {id: 2, title: 'Professional Growth', img: '../Img/sc3 block2 about.svg', subTitle: 'Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim empor est ea.'},
-    {id: 3, title: 'Growing Salary', img: '../Img/sc3 block3 about.svg', subTitle: 'Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea ad.'},
+    {id: 1, title: 'Training', img:blockOneBenefits , subTitle: 'Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.'},
+    {id: 2, title: 'Professional Growth', img: blockTwoBenefits, subTitle: 'Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim empor est ea.'},
+    {id: 3, title: 'Growing Salary', img: blockThreeBenefits, subTitle: 'Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea ad.'},
 ];
+
+
+
 
 
 const About:React.FC = () => {
@@ -67,7 +85,7 @@ const About:React.FC = () => {
         <section className="author">
         <div className="author__container">
                         <div className="author__picture">
-                            <img src='../Img/picture author.jpg' alt="" />
+                            <img src={imgAuthor}  alt="" />
                         </div>
                         <div className="author__biography">
                             <div className="author__biography-text">
@@ -81,7 +99,7 @@ const About:React.FC = () => {
                             <div className="author__biography-company">
                             CEO - Createx Construction Bureau 
                             <div className="authir__biography-signature">
-                                <img src='../Img/picture author signature.svg' alt="" />
+                                <img src={imgAuthorSignature} alt="" />
                             </div>
                             </div>
                         </div>

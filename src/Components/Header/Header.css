@@ -49,11 +49,10 @@ header{
 font-family: Ubuntu;
 font-size: 26px;
 font-weight: 700;
-text-decoration: none;
 }
-.header__logo{
+.header__logo a{
     text-decoration: none;
-color: black;
+    color: black;
 
 }
 

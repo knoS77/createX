@@ -1,43 +1,60 @@
 import React, {useState } from "react";
+
 import Modal from "../Modal/Modal";
 import "../Styles/Home.css";
+// valueBlock
+import valueBlockOne from "../Img/sc1 block1.svg";
+import valueBlockTwo from "../Img/sc1 block2.svg";
+import valueBlockThree from "../Img/sc1 block3.svg";
+
+// Services
+import servicBlockOne from "../Img/sc2 block1.png";
+import servicBlockTwo from "../Img/sc2 block2.svg";
+import servicBlockThree from "../Img/sc2 block3.svg";
+import servicBlockFour from "../Img/sc2 block4.png";
+
+// Browse
+import browseBlockOne from "../Img/sc3 block1.jpg";
+import browseBlockTwo from "../Img/sc3 block2.png";
+import browseBlockThree from "../Img/sc3 block3.png";
+
 
 type ValueBlockItems = {
     id: number,
     title: string,
     subTitle: string,
-    img: string,
+    img: any,
 };
 const ValueBlock:ValueBlockItems[] = [
-    {id: 1, title: 'Quality', img: '../Img/sc1 block1.svg',  subTitle: 'Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.'},
-    {id: 2, title: 'Safety', img: '../Img/sc1 block2.svg', subTitle: 'Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim empor est ea.'},
-    {id: 3, title: 'Comfort', img: '../Img/sc1 block1.svg',  subTitle: 'Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea ad.'},
+    {id: 1, title: 'Quality', img: valueBlockOne,  subTitle: 'Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.'},
+    {id: 2, title: 'Safety', img: valueBlockTwo, subTitle: 'Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim empor est ea.'},
+    {id: 3, title: 'Comfort', img: valueBlockThree,  subTitle: 'Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea ad.'},
 ];
 
 
 type ServicesItem = {
     id: number,
     title: string,
-    img: string,
+    img: any,
 };
 const ServicesBlockItem:ServicesItem[] = [
-    {id: 1, title: 'Construction', img: '../Img/sc2 block1.png'},
-    {id: 2, title: 'Project Development', img: '../Img/sc2 block2.svg'},
-    {id: 3, title: 'Interior Design', img: '../Img/sc2 block3.svg'},
-    {id: 4, title: 'Repairs', img: '../Img/sc2 block4.png'},
+    {id: 1, title: 'Construction', img: servicBlockOne},
+    {id: 2, title: 'Project Development', img:servicBlockTwo},
+    {id: 3, title: 'Interior Design', img:servicBlockThree},
+    {id: 4, title: 'Repairs', img: servicBlockFour},
 ];
 
 type BrowseItem = {
     id: number,
-    img: string,
+    img: any,
     title: string,
     subTitle: string,
 };
 
 const BrowseBlockItem:BrowseItem[] = [
-    {id: 1, img: '../Img/sc3 block1.jpg', title: 'Red Finger Building', subTitle: 'Business Centers',},
-    {id: 2, img: '../Img/sc3 block2.png', title: 'Cubes Building', subTitle: 'Business Centers',},
-    {id: 3, img: '../Img/sc3 block3.png', title: 'The Pencil Building', subTitle: 'Stores & Malls',},
+    {id: 1, img: browseBlockOne, title: 'Red Finger Building', subTitle: 'Business Centers',},
+    {id: 2, img: browseBlockTwo, title: 'Cubes Building', subTitle: 'Business Centers',},
+    {id: 3, img: browseBlockThree, title: 'The Pencil Building', subTitle: 'Stores & Malls',},
 ];
 
 

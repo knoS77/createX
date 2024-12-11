@@ -11,7 +11,7 @@ section{
 
 /* Create */
 .create {
-    background: url("../../public/Img/bckg\ create.jpg") lightgray 50% / cover;
+    background: url("../Img/bckg\ create.jpg") lightgray 50% / cover;
     width: 100%;
     height: 630px;
     color: white;
@@ -170,7 +170,7 @@ cursor: pointer;
     .services__block:hover {
         box-shadow: 1px 4px 45px 100px rgba(0, 0, 0, 0.4) inset;
         color: white;
-    background: url('../../public/Img/sc2\ blockHover.jpg')  50% / cover;
+    background: url("../Img/sc2\ blockHover.jpg")  50% / cover;
     }
     
     .services__block-title {
