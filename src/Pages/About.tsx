@@ -69,13 +69,17 @@ const About:React.FC = () => {
             Materials
             </div>
             <div className="material__container">
-            {MaterialsItem.map((arr): React.ReactElement => (
-                        <div key={arr.id} className="materials__block">
-                            <img src={arr.img} alt={arr.title} />
-                            <div className="materials__block-title">{arr.title}</div>
-                            <div className="materials__block-subTitle">{arr.subTitle}</div>
-                        </div>
-                    ))}
+            {MaterialsItem && MaterialsItem.length > 0 ? (
+  MaterialsItem.map((arr):React.ReactElement => (
+    <div key={arr.id} className="materials__block">
+      <img src={arr.img} alt={arr.title} />
+      <div className="materials__block-title">{arr.title}</div>
+      <div className="materials__block-subTitle">{arr.subTitle}</div>
+    </div>
+  ))
+) : (
+  <div>Загрузка материалов...</div>
+)}
             </div>
         </section>
 
