@@ -33,6 +33,7 @@ text-transform: uppercase;
     align-items: center;
     flex-wrap: wrap;
     gap: 30px;
+    display: block;
 }
 .materials__block {
     color: #1E212C;
