@@ -70,15 +70,15 @@ const About:React.FC = () => {
             </div>
             <div className="material__container">
             {MaterialsItem && MaterialsItem.length > 0 ? (
-  MaterialsItem.map((arr):React.ReactElement => (
-    <div key={arr.id} className="materials__block">
-      <img src={arr.img} alt={arr.title} />
-      <div className="materials__block-title">{arr.title}</div>
-      <div className="materials__block-subTitle">{arr.subTitle}</div>
+  MaterialsItem.map((item) => (
+    <div key={item.id} className="materials__block">
+      <img src={item.img} alt={item.title} />
+      <div className="materials__block-title">{item.title}</div>
+      <div className="materials__block-subTitle">{item.subTitle}</div>
     </div>
   ))
 ) : (
-  <div>Загрузка материалов...</div>
+  <div>Loading materials...</div>
 )}
             </div>
         </section>
