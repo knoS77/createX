@@ -36,8 +36,9 @@ text-transform: uppercase;
     position: relative;
 }
 .materials__block {
-    position: relative;
-    color: #1E212C;
+    opacity: 1;
+position: relative;
+color: #1E212C;
 width:240px;
 padding: 10px 0;
 gap: 20px;
