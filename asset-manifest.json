@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/createX/static/css/main.2da80028.css",
+    "main.css": "/createX/static/css/main.feddfdc2.css",
     "main.js": "/createX/static/js/main.5b2b066e.js",
     "static/media/bckg news.png": "/createX/static/media/bckg news.9464c7166f84d07fccf1.png",
     "static/media/bckg create.jpg": "/createX/static/media/bckg create.4ae695851594990872b9.jpg",
@@ -31,11 +31,11 @@
     "static/media/sc1 aboutTwo.svg": "/createX/static/media/sc1 aboutTwo.81c5e5ea46dd936c021cd845d6f55de5.svg",
     "static/media/sc1 aboutThree.svg": "/createX/static/media/sc1 aboutThree.53e59a7abefbfc3553c29349a6733e93.svg",
     "index.html": "/createX/index.html",
-    "main.2da80028.css.map": "/createX/static/css/main.2da80028.css.map",
+    "main.feddfdc2.css.map": "/createX/static/css/main.feddfdc2.css.map",
     "main.5b2b066e.js.map": "/createX/static/js/main.5b2b066e.js.map"
   },
   "entrypoints": [
-    "static/css/main.2da80028.css",
+    "static/css/main.feddfdc2.css",
     "static/js/main.5b2b066e.js"
   ]
 }
