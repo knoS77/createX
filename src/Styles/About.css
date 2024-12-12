@@ -33,13 +33,14 @@ text-transform: uppercase;
     align-items: center;
     flex-wrap: wrap;
     gap: 30px;
+    position: relative;
 }
 .materials__block {
+    position: relative;
     color: #1E212C;
 width:240px;
 padding: 10px 0;
 gap: 20px;
-opacity: 0px;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -51,10 +52,8 @@ color:  #FF5A30;
 font-family: Ubuntu;
 font-size: 30px;
 font-weight: 600;
-display: block;
 }
 .materials__block-subTitle {
-    display: block;
 font-family: Ubuntu;
 font-size: 12px;
 font-weight: 400;
