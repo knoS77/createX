@@ -26,7 +26,6 @@ text-transform: uppercase;
 /* Material */
 
 .material__container {
-
     color: #1E212C;
     margin: 30px 0 0 0;
     display: flex;
@@ -52,9 +51,10 @@ color:  #FF5A30;
 font-family: Ubuntu;
 font-size: 30px;
 font-weight: 600;
-
+display: block;
 }
 .materials__block-subTitle {
+    display: block;
 font-family: Ubuntu;
 font-size: 12px;
 font-weight: 400;

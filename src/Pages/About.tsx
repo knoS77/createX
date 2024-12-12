@@ -125,5 +125,6 @@ const About:React.FC = () => {
         </main>
     )
 }
+console.log(MaterialsItem);
 
 export default About
